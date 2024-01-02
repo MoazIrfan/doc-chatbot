@@ -5,6 +5,9 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores.chroma import Chroma
 import os
 import shutil
+from dotenv import load_dotenv
+
+load_dotenv()
 
 CHROMA_PATH = "chroma"
 DATA_PATH = "data/books"
